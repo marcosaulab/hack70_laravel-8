@@ -40,8 +40,8 @@ Fai quello che ti dico con wire:submit -> scatena l'evento submit del form ma ch
 
 - cosa fondametale: ogni componente deve essere racchiuso in un UNICO tag: 
  - Esempi giusti:
-   <div></div> <table></table>
+   `<div></div> <table></table>`
 
  - Esempi sbagliati:
-   <div></div><h1></h1>
+   `<div></div><h1></h1>`
          
