@@ -16,6 +16,14 @@
             <textarea cols="30" rows="10" class="form-control" wire:model="body"></textarea>
             @error('body') <span class="text-danger fst-italic">{{ $message }}</span> @enderror
         </div>
+        <div class="mb-3">
+           <label for="tags" class="form-label">Tags </label>
+           <select wire:model="tags" class="form-control" multiple>
+                @foreach ($tagsAll as $tag)
+                    <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+                @endforeach
+           </select>
+        </div>
 
         <button type="submit" class="btn btn-primary">Salva</button>
     </form>

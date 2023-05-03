@@ -45,3 +45,21 @@ Fai quello che ti dico con wire:submit -> scatena l'evento submit del form ma ch
  - Esempi sbagliati:
    `<div></div><h1></h1>`
          
+
+## Introduciamo una relazione N a N
+
+Vogliamo che i nostri articoli siano collegati ai tag: quindi diciamo che un articolo può avere più tags
+e un tag può essere associato a più articoli
+
+1. Prima mi occupo di verificare se ho tutte le tabelle coinvolte nella relazione, nel caso non le avessi le creo.
+2. Poi i fillable dei nuovi model ed eventualmente DatabaseSeeder
+3. tabella pivot
+4. Istruiamo i models con le funzioni di relazione
+
+
+## Direttive Livewire
+
+- wire:model.lazy: id dati di input vengono inviati al server solo quando l'elemento di input perder il focus
+
+- wire:model.defer: id dati in input vengono inviati al server solo quando viene attivato un envento specifico:
+  la pressione del tasto salva

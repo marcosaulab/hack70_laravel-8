@@ -15,6 +15,10 @@ class ArticlesTable extends Component
         $this->addNumber++;
     }
 
+    public function deleteArticle(Article $article) {
+        $article->delete();
+    }
+
     public function render()
     {   
         return view('livewire.articles-table', [
